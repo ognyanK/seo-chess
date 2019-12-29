@@ -216,3 +216,35 @@ a.tooltip-content.tooltip-bottom,.tooltip-content.tooltip-bottom {
   filter: brightness(0) invert(1);
   padding-top: 25px;
 }
+
+ul.breadcrumb {
+  position: absolute;
+  list-style: none;
+  padding: 2px 10px;
+  z-index:9999999;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 4px;
+  color: #2fcbe0;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #2fcbe0;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #2fcbe0;
+  text-decoration: underline;
+}
